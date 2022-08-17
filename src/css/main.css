@@ -3,11 +3,12 @@
 }
 
 #q4Wrapper {
-  background-color: #2A3035;
+  background-color: #2a3035;
   font-family: "Roboto", sans-serif;
   color: white;
 }
-#q4Wrapper h1, #q4Wrapper h3 {
+#q4Wrapper h1,
+#q4Wrapper h3 {
   margin: 0;
 }
 #q4Wrapper h1 {
@@ -17,9 +18,11 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  width: max-content;
 }
-#q4Wrapper header, #q4Wrapper footer {
-  background-color: #22272B;
+#q4Wrapper header,
+#q4Wrapper footer {
+  background-color: #22272b;
 }
 #q4Wrapper header {
   padding: 20px;
@@ -34,6 +37,7 @@
 }
 #q4Wrapper article img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
 }
 #q4Wrapper a {
   display: inline-block;
@@ -60,5 +64,7 @@
 
 /* Begin styling the report items here! */
 .reports {
-
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
